@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" reuseIdentifier="CustomizeCollectionViewCell" translatesAutoresizingMaskIntoConstraints="NO" id="gTV-IL-0wX" customClass="CustomizeCollectionViewCell" customModule="StudyApp_v_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="230"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="230"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f8A-qx-pH5">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="163"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3af-UE-ZWb">
+                        <rect key="frame" x="12" y="163" width="174" height="67"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcW-1U-fxe">
+                        <rect key="frame" x="12" y="163" width="174" height="67"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t5b-0K-ugL">
+                        <rect key="frame" x="0.0" y="8" width="64" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <state key="normal" title="Edit">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="f8A-qx-pH5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2eE-0P-nsa"/>
+                <constraint firstItem="f8A-qx-pH5" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6as-Py-zD5"/>
+                <constraint firstAttribute="trailing" secondItem="f8A-qx-pH5" secondAttribute="trailing" id="Cge-OU-evF"/>
+                <constraint firstItem="dcW-1U-fxe" firstAttribute="top" secondItem="f8A-qx-pH5" secondAttribute="bottom" id="Eg9-Zs-aBD"/>
+                <constraint firstAttribute="trailing" secondItem="dcW-1U-fxe" secondAttribute="trailing" constant="11" id="Huo-W8-Ywu"/>
+                <constraint firstAttribute="bottom" secondItem="dcW-1U-fxe" secondAttribute="bottom" id="MQx-5u-hem"/>
+                <constraint firstAttribute="trailing" secondItem="dcW-1U-fxe" secondAttribute="trailing" constant="11" id="ORg-1a-VdA"/>
+                <constraint firstItem="dcW-1U-fxe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Ufg-j9-P9g"/>
+                <constraint firstItem="3af-UE-ZWb" firstAttribute="top" secondItem="f8A-qx-pH5" secondAttribute="bottom" id="f7d-Kr-MBA"/>
+                <constraint firstItem="dcW-1U-fxe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="hZ4-4g-STY"/>
+                <constraint firstAttribute="bottom" secondItem="dcW-1U-fxe" secondAttribute="bottom" id="s2d-A5-0td"/>
+            </constraints>
+            <size key="customSize" width="298" height="397"/>
+            <connections>
+                <outlet property="Answertext" destination="3af-UE-ZWb" id="IRq-yK-h2O"/>
+                <outlet property="Edit" destination="t5b-0K-ugL" id="7la-9e-x95"/>
+                <outlet property="Image" destination="f8A-qx-pH5" id="NBY-ZX-Q07"/>
+                <outlet property="Questiontext" destination="dcW-1U-fxe" id="k6o-ZF-hwq"/>
+            </connections>
+            <point key="canvasLocation" x="313.768115942029" y="140.625"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
